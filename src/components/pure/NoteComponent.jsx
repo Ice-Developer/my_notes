@@ -32,6 +32,7 @@ const NoteComponent = ({title, categories, content, date, id, func1, func2, func
             <div className="card-body">
                 <h2 className="card-title">Title: {title} </h2>
                 <p>Last edited on: {date}</p>
+                <p>Categories: {categories}</p>
                 <div className="card-actions justify-end">
                 <button className="btn btn-primary" >
                     <BiArchive className='font-bold text-2xl' onClick={()=>{func1(id)}}/>
